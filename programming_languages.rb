@@ -7,10 +7,10 @@ def reformat_languages(languages)
   languages.each do |style, name|
     name.each do |specs, details|
       if new_hash.has_key?(specs)
-        new_hash[s][:style] << style 
+        new_hash[specs][:style] << style 
       else 
-        new_hash[lang] = details
-        new_hash[land][:style] = [style]
+        new_hash[specs] = details
+        new_hash[specs][:style] = [style]
     end 
   end
 end 
