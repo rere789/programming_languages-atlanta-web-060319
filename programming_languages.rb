@@ -3,8 +3,8 @@ require "pry"
 
 def reformat_languages(languages)
   # your code here
-  languages.each do |sub_type, name|
-      sub_type.delete("oo")
-    name[:ruby] = { :style => :oo}
+  languages.reject do |sub_type, name|
+      if sub_type == :oo 
+    end 
   end
 end
