@@ -10,7 +10,8 @@ def reformat_languages(languages)
         new_hash[lang][:style] << style 
       else 
         new_hash[lang] = details
-        new_hash[land]
+        new_hash[land][:style] = [style]
     end 
   end
+  new_hash
 end
