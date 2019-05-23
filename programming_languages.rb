@@ -6,7 +6,8 @@ def reformat_languages(languages)
   new_hash = {}
   languages.each do |style, name|
     name.each do |specs, details|
-      if new_hash.has_
+      if new_hash.has_key?(specs)
+        new_hash
     end 
   end
 end
